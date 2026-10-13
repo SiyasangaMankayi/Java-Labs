@@ -27,8 +27,4 @@ void main() {
     System.out.println("Final Amount: R" + finalAmount);
 
 
-    }
-
-
-
-
+}
