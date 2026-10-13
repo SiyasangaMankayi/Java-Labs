@@ -21,7 +21,5 @@ public class TemperatureMain {
         double celsiusResult = converter.convertToCelsius(fahrenheitInput);
 
         System.out.println("Temperature in Celsius: " + celsiusResult);
-
-        input.close();
     }
 }
