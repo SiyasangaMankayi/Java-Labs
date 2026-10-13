@@ -1,13 +1,34 @@
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
-void main() {
-    //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-    // to see how IntelliJ IDEA suggests fixing it.
-    IO.println(String.format("Hello and welcome!"));
 
-    for (int i = 1; i <= 5; i++) {
-        //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
-        // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
-        IO.println("i = " + i);
+import java.util.Scanner;
+
+void main() {
+    Scanner input = new Scanner(System.in);
+
+    System.out.print("Enter product name: ");
+    String productName = input.nextLine();
+
+    System.out.print("Enter unit price: R");
+    double price = input.nextDouble();
+
+    System.out.print("Enter quantity: ");
+    int quantity = input.nextInt();
+
+    ShoppingTotal shop = new ShoppingTotal();
+
+    double totalCost = shop.calculateTotal(price, quantity);
+    double discount = shop.calculateDiscount(totalCost);
+    double finalAmount = shop.calculateFinalAmount(totalCost, discount);
+
+    System.out.println("\nProduct Name: " + productName);
+    System.out.println("Unit Price: R" + price);
+    System.out.println("Quantity: " + quantity);
+    System.out.println("Total Cost: R" + totalCost);
+    System.out.println("Discount: R" + discount);
+    System.out.println("Final Amount: R" + finalAmount);
+
+
     }
-}
+
+
+
+

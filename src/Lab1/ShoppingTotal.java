@@ -1,13 +1,15 @@
 
-void main() {
-    String productName = "Shoes";
-    double unitPrice = 250.00;
-    int quantity = 2;
+class ShoppingTotal {
 
-    double totalCost = unitPrice * quantity;
+    double calculateTotal(double price, int quantity) {
+        return price * quantity;
+    }
 
-    IO.println("Product Name: " + productName);
-    IO.println("Unit Price: " + unitPrice);
-    IO.println("Quantity: " + quantity);
-    IO.println("Total Cost: " + totalCost);
+    double calculateDiscount(double totalCost) {
+        return totalCost * 0.10;
+    }
+
+    double calculateFinalAmount(double totalCost, double discount) {
+        return totalCost - discount;
+    }
 }
