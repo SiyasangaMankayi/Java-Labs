@@ -19,7 +19,7 @@ void main() {
     double discount = shop.calculateDiscount(totalCost);
     double finalAmount = shop.calculateFinalAmount(totalCost, discount);
 
-    System.out.println("\nProduct Name: " + productName);
+    System.out.println("Product Name: " + productName);
     System.out.println("Unit Price: R" + price);
     System.out.println("Quantity: " + quantity);
     System.out.println("Total Cost: R" + totalCost);
