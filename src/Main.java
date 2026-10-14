@@ -1,10 +1,14 @@
 import Lab2.LoginCheck;
+import Lab3.StudentMarks;
 
 public class Main {
   public static void main(String[] args) {
 
     LoginCheck login = new LoginCheck();
-    login.loginDetails();
+    login.loginDetails(); // LoginCheck
+
+    StudentMarks studentMark = new StudentMarks();
+    studentMark.display();
   }
 }
 
