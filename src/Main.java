@@ -1,4 +1,5 @@
 import Lab2.LoginCheck;
+import Lab3.ArraySearch;
 import Lab3.ArrayStatistics;
 import Lab3.StudentMarks;
 
@@ -12,7 +13,8 @@ public class Main {
     studentMark.display();
     ArrayStatistics statistics = new ArrayStatistics();
     statistics.Start();
-
+    ArraySearch search = new ArraySearch();
+    search.Start();
   }
 }
 
