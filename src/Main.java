@@ -4,7 +4,7 @@ import Lab3.ArrayStatistics;
 import Lab3.StudentMarks;
 
 public class Main {
-  public static void main(String[] args) {
+   void main() {
 
     LoginCheck login = new LoginCheck();
     login.loginDetails(); // LoginCheck
