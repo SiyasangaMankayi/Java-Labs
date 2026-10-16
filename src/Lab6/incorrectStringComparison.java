@@ -2,11 +2,7 @@ package Lab6;
 
 public class incorrectStringComparison {
     void main() {
-        cd "C:\Users\JAVA 19-07\Documents\Java Labs"
-        git status
-        git add src/Lab6/incorrectStringComparison.java
-        git commit -m "Complete String comparison exercise"
-        git push
+        
     /*
     Explain why the following code may print Different text, then correct it to compare String contents.
 
