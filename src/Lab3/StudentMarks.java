@@ -16,7 +16,6 @@ public class StudentMarks {
         System.out.println(total);
         System.out.println("Average is " + average);
 
-
     }
 
 }
